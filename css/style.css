@@ -1,0 +1,57 @@
+.square-input {
+    text-align: center;
+    font-size: 24px; /* Tamanho da fonte */
+    background: #555; /* Cor de fundo dos campos */
+    color: white; /* Cor da fontes dos inputs */
+    border: 2px solid #777; /* Borda leve */
+    border-radius: 15px; /* Borda arredondada */
+    text-transform: uppercase;
+    caret-color: transparent;
+}
+
+/* Quando o dispositivo está em modo retrato (mais comprido) */
+@media (orientation: portrait) {
+    .square-input{
+        width: 7vh;
+        height: 7vh;
+        min-width: 50px; /* Largura mínima */
+        min-height: 50px; /* Altura mínima */
+    }
+}
+
+/* Quando o dispositivo está em modo paisagem (mais largo) */
+@media (orientation: landscape) {
+    .square-input {
+        width: 5vw;
+        height: 5vw;
+        min-width: 70px;
+        min-height: 70px;
+    }
+}
+
+input:focus {
+    background: #888;
+    outline: none;
+}
+
+body {
+    background: #6c5c64;
+    margin: 0;
+}
+
+.green {
+    background-color: #3AA394;
+}
+
+.yellow {
+    background-color: #D3AD69;
+}
+.red {
+    background-color: red;
+}
+
+.alert {
+    background: #0a53be;
+    color: white;
+    border: none;
+}
